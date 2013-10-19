@@ -1,0 +1,16 @@
+
+
+
+
+
+body {
+	font: normal 100% Georgia;
+}
+
+article p:first-child {
+	background-color: #aaa;
+}
+
+article > p:first-child:first-letter {
+	font-size: 4em;
+};
