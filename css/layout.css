@@ -1,8 +1,5 @@
 
 
-
-
-
 body {
 	font: normal 100%/140% Georgia, serif;
 	width: 960px;
@@ -26,4 +23,14 @@ article p:first-child {
 
 article > p:first-child:first-letter {
 	font-size: 4em;
-};
+}
+
+
+.photos {
+	float: right;
+	width: 645px;
+	margin: 25px 0 25px 25px;
+}
+.caption {
+	color: #888;
+}
