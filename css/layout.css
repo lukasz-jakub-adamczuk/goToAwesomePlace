@@ -25,12 +25,19 @@ article > p:first-child:first-letter {
 	font-size: 4em;
 }
 
+.media {
+	float: right;
+}
+
 
 .photos {
 	float: right;
 	width: 645px;
 	margin: 25px 0 25px 25px;
+
 }
 .caption {
 	color: #888;
+	font-family: sans-serif;
+	font-size: .875em;
 }
