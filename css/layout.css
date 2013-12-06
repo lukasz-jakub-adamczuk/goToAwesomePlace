@@ -1,13 +1,13 @@
-
-
 body {
 	font: normal 100%/140% Georgia, serif;
-	width: 960px;
-	margin: 0 auto;
+
+	background: url(../media/photos/revisited/WP_20131007_054.jpg) 50% -500px no-repeat;
+
+	/*position: fixed;*/
 }
 
 h1 {
-	font-size: 4em;
+	font-size: 6em;
 }
 h2 {
 	font-size: 2em;
@@ -15,6 +15,34 @@ h2 {
 
 p {
 	width: 600px;
+}
+
+header {
+	width: 960px;
+	margin: 250px auto;
+	text-align: center;
+}
+h1 {
+	color: #333;
+	font-weight: normal;
+	text-shadow: #fff 0 1px 0;
+}
+h2 {
+	color: 888;
+	/*font-variant: small-caps;*/
+	/*text-transform: uppercase;*/
+	font-weight: normal;
+	display: none;
+}
+
+article {
+	width: 960px;
+	margin: 400px auto 0;
+
+
+	background: #fff;
+	/*background: rgba(255, 255, 255, .5);*/
+
 }
 
 article p:first-child {
