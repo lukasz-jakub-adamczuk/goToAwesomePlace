@@ -16,12 +16,6 @@ h2 {
 p {
 	width: 600px;
 }
-
-header {
-	width: 960px;
-	margin: 250px auto;
-	text-align: center;
-}
 h1 {
 	color: #333;
 	font-weight: normal;
@@ -32,6 +26,15 @@ h2 {
 	/*font-variant: small-caps;*/
 	/*text-transform: uppercase;*/
 	font-weight: normal;
+	text-align: center;	
+}
+
+header {
+	width: 960px;
+	margin: 250px auto;
+	text-align: center;
+}
+header h2 {
 	display: none;
 }
 
@@ -53,6 +56,34 @@ article > p:first-child:first-letter {
 	font-size: 4em;
 }
 
+dt {
+	font-weight: bold;
+}
+dd {
+	padding: 15px 15px 0;
+	font-size: 2em;
+	/*line-height: 2.5em;*/
+}
+
+dt {
+	display: inline-block;
+	width: 250px;
+	text-align: right;
+}
+dd {
+	display: inline-block;
+	width: 500px;
+	color: #aaa;
+}
+dd > span {
+	color: #000;
+	font-size: .5em;
+}
+
+dl + p {
+	text-align: center;
+}
+
 .media {
 	float: right;
 }
@@ -62,10 +93,16 @@ article > p:first-child:first-letter {
 	float: right;
 	width: 645px;
 	margin: 25px 0 25px 25px;
+	margin: 0 0 0 25px;
 
 }
 .caption {
 	color: #888;
 	font-family: sans-serif;
 	font-size: .875em;
+}
+
+blockquote {
+	font-style: italic;
+	font-size: 1.5em;
 }
