@@ -56,15 +56,15 @@ function getImageUrl($sImageName, $aParams) {
 		// echo 'file exists';
 	} else {
 		//Console.log 'file does not exists';
-		// require_once APP_DIR.'/php/ImageManipulator.php';
+		require_once APP_DIR.'/php/ImageManipulator.php';
 
-		// $oImageManipulator = new ImageManipulator();
+		$oImageManipulator = new ImageManipulator();
 
-		// $oImageManipulator->loadImage($sOriginImage);
+		$oImageManipulator->loadImage($sOriginImage);
 
-		// $oImageManipulator->resize($iWidth, $iHeight, $bMargins);
+		$oImageManipulator->resize($iWidth, $iHeight, $bMargins);
 
-		// $oImageManipulator->save($sFilePath);
+		$oImageManipulator->save($sFilePath);
 	}
 
 	// image source

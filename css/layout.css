@@ -1,7 +1,7 @@
 body {
 	font: normal 100%/140% Georgia, serif;
 
-	background: url(../media/photos/revisited/WP_20131007_054.jpg) 50% -500px no-repeat;
+	/*background: url(../media/photos/revisited/WP_20131007_054.jpg) 50% -500px no-repeat;*/
 
 	/*position: fixed;*/
 }
@@ -14,7 +14,7 @@ h2 {
 }
 
 p {
-	width: 600px;
+	width: 640px;
 }
 h1 {
 	color: #333;
@@ -26,7 +26,17 @@ h2 {
 	/*font-variant: small-caps;*/
 	/*text-transform: uppercase;*/
 	font-weight: normal;
-	text-align: center;	
+	margin-top: 100px;
+	text-align: center;
+}
+h2:before {
+	display: block;
+	content: '';
+	background: maroon;
+	width: 100px;
+	height: 5px;
+	margin: 0 50px;
+	display: none;
 }
 
 header {
@@ -39,7 +49,7 @@ header h2 {
 }
 
 article {
-	width: 960px;
+	width: 980px;
 	margin: 400px auto 0;
 
 
@@ -49,44 +59,62 @@ article {
 }
 
 article p:first-child {
-	background-color: #aaa;
+	/*background-color: #aaa;*/
 }
 
 article > p:first-child:first-letter {
 	font-size: 4em;
 }
 
+dl {
+	background: #eee;
+	border-radius: 5px;
+	padding-bottom: 10px;
+	width: 320px;
+	clear: both;
+	float: right;
+	margin-left: 20px;
+}
 dt {
-	font-weight: bold;
+	/*font-weight: bold;*/
+	color: #444;
+
 }
 dd {
-	padding: 15px 15px 0;
+	/*padding: 15px 15px 0;*/
 	font-size: 2em;
 	/*line-height: 2.5em;*/
+	/*text-shadow: #fff 0 1px 0;*/
 }
 
 dt {
 	display: inline-block;
-	width: 250px;
+	width: 190px;
 	text-align: right;
+	/*margin-left: 20px;*/
 }
 dd {
 	display: inline-block;
-	width: 500px;
-	color: #aaa;
+
+	/*width: 480px;*/
+	/*color: #aaa;*/
+	width: 120px;
+	margin: 10px 0 0 10px;
 }
 dd > span {
-	color: #000;
+	color: #888;
 	font-size: .5em;
 }
 
 dl + p {
 	text-align: center;
+	font-variant: small-caps;
 }
 
 .media {
 	float: right;
 }
+
 
 
 .photos {
