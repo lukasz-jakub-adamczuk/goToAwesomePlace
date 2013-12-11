@@ -145,6 +145,34 @@ aside {
 	float: right;
 	margin-left: 20px;
 }
+.nav {
+	position: fixed;
+	list-style: none;
+	padding: 5px 10px;
+	margin: 10px;
+	background: #eee;
+	border-radius: 5px;
+}
+.nav > li {
+	
+}
+.nav > li:before {
+	display: inline-block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	background-color: #3d7;
+	border-radius: 5px;
+}
+
+.nav a {
+	color: #aaa;
+	/*color: transparent;*/
+}
+.nav a:hover {
+	color: #245;
+}
 
 .media {
 	float: right;
@@ -177,4 +205,9 @@ aside {
 blockquote {
 	font-style: italic;
 	font-size: 1.5em;
+}
+
+footer {
+	text-align: center;
+	margin: 250px 0;
 }
