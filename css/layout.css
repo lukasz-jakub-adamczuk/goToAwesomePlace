@@ -8,11 +8,46 @@ body {
 }
 
 
+.nav {
+	position: fixed;
+	list-style: none;
+	padding: 5px;
+	margin: 0 auto;
+	background: #eee;
+	border-radius: 5px;
+	/*width: 100%;*/
+}
+.nav > li {
+	/*display: inline-block;*/
+}
+.nav > li:first-child {
+	background: #eee;
+	display: none;
+}
+.nav > li:before {
+	display: inline-block;
+	content: '';
+	width: 10px;
+	height: 10px;
+	margin-right: 5px;
+	background-color: #3d7;
+	border-radius: 5px;
+	display: none;
+}
+
+.nav a {
+	color: #aaa;
+	/*color: transparent;*/
+}
+.nav a:hover {
+	color: #245;
+}
+
 article {
 	min-width: 320px;
 	max-width: 980px;
 
-	margin: 450px auto 0;
+	margin: 0 auto;
 
 	/*background: #fff;*/
 	/*background: rgba(255, 255, 255, .5);*/
@@ -149,35 +184,6 @@ aside {
 	float: right;
 	margin-left: 20px;
 }
-.nav {
-	position: fixed;
-	list-style: none;
-	padding: 5px 10px;
-	margin: 5px;
-	background: #eee;
-	border-radius: 5px;
-}
-.nav > li {
-	display: inline-block;
-}
-.nav > li:before {
-	display: inline-block;
-	content: '';
-	width: 10px;
-	height: 10px;
-	margin-right: 5px;
-	background-color: #3d7;
-	border-radius: 5px;
-	display: none;
-}
-
-.nav a {
-	color: #aaa;
-	/*color: transparent;*/
-}
-.nav a:hover {
-	color: #245;
-}
 
 .media {
 	float: right;
@@ -218,10 +224,19 @@ footer {
 }
 
 
-@media screen and (min-width: 320px) and (max-width: 640px) {
+@media screen and (min-width: 320px) and (max-width: 650px) {
 	html {
-		background-color: #fcc;
+		/*background-color: #fcc;*/
 		/*font-size: 80%;*/
+	}
+	body {
+		background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=960x480) 50% 0 no-repeat;
+	}
+	.header {
+		padding: 100px 0 300px;
+	}
+	h1 {
+		font-size: 4em;
 	}
 	p {
 		width: 100%;
@@ -235,22 +250,34 @@ footer {
 		width: 100%;
 	}
 }
-@media screen and (min-width: 641px) and (max-width: 980px) {
+@media screen and (min-width: 651px) and (max-width: 980px) {
 	html {
-		background-color: #cfc;
+		/*background-color: #cfc;*/
 		/*font-size: 100%;*/
 	}
+	body {
+		background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=1280x800) 50% 0 no-repeat;
+	}
+	.header {
+		padding: 200px 0 500px;
+	}
+	h1 {
+		font-size: 5em;
+	}
 	p {
-		width: 100%;
+		width: 640px;
 	}
 }
 @media screen and (min-width: 981px) {
 	html {
-		background-color: #ccf;
+		/*background-color: #ccf;*/
 		/*font-size: 120%;*/
 	}
+	.header {
+		padding: 250px 0 750px;
+	}
 	p {
-		width: 100%;
+		width: 640px;
 	}
 }
 
