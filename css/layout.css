@@ -1,107 +1,37 @@
 body {
-	font: normal 100%/140% Georgia, serif;
-
-	/*background: url(../media/photos/revisited/WP_20131007_054.jpg) 50% -500px no-repeat;*/
-	
+	font: normal 100% Georgia, serif;
 	margin: 0;
-	/*position: fixed;*/
 }
-
-#part-one {
-	background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-#part-two {
-	background: url(../image.php?img=revisited/WP_20131001_014.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-#part-three {
-	background: url(../image.php?img=revisited/WP_20131008_014.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-#part-four {
-	background: url(../image.php?img=revisited/WP_20131003_011.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-#part-five {
-	background: url(../image.php?img=revisited/WP_20131006_030.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-#part-six {
-	background: url(../image.php?img=revisited/WP_20131009_058.jpg&size=1920x1080) 50% 0 no-repeat;
-}
-
-.nav {
-	position: fixed;
-	list-style: none;
-	padding: 5px;
-	margin: 0 auto;
-	background: #eee;
-	border-radius: 5px;
-	/*width: 100%;*/
-	/*display: none;*/
-}
-
-
 article {
 
 }
 article > header {
-	/*width: 960px;*/
 	margin: 0 auto;
 	padding: 200px 0 750px;
 	text-align: center;
 }
-header {
-	/*position: relative;*/
-}
-header > span {
-	font-family: 'Gill Sans', sans-serif;
-	text-transform: uppercase;
-	color: #222;
-	border-bottom: 1px solid #222;
-}
 
 section {
-	/*min-width: 320px;*/
 	max-width: 980px;
 	padding: 0 8px;
-
 	margin: 0 auto;
-
-	/*background: #fff;*/
-	/*background: rgba(255, 255, 255, .5);*/
-
 }
-
 
 article p:first-child:first-letter {
 	font-size: 4em;
 }
-
-
-/*section:nth-child(2) {
-	display: block;
-}
-*/
-section > header {
-	/*margin: 100px;*/
-}
-
-h1 {
-	font-size: 5em;
-}
-h2 {
-	font-size: 2em;
-}
-
 p {
 	width: 640px;
 }
 h1 {
+	font-size: 5em;
 	color: #333;
 	font-weight: normal;
 	text-shadow: #fff 0 1px 0;
 }
 h2 {
+	font-size: 2em;
 	color: 888;
-	/*font-variant: small-caps;*/
-	/*text-transform: uppercase;*/
 	font-weight: normal;
 	margin-top: 50px;
 	text-align: center;
@@ -111,11 +41,7 @@ h2 {
 dl {
 	background: #eee;
 	border-radius: 5px;
-	padding-bottom: 10px;
-	/*width: 320px;*/
-	/*clear: both;*/
-	/*float: right;*/
-	
+	padding-bottom: 10px;	
 }
 
 dt {
@@ -123,13 +49,10 @@ dt {
 	color: #444;
 	width: 190px;
 	text-align: right;
-	/*margin-left: 20px;*/
 }
 dd {
 	display: inline-block;
 	font-size: 2em;
-	/*width: 480px;*/
-	/*color: #aaa;*/
 	width: 120px;
 	margin: 10px 0 0 10px;
 }
@@ -148,14 +71,12 @@ aside > a {
 	display: block;
 	width: 200px;
 	margin: 1em auto;
-	/*text-transform: uppercase;*/
 }
 
 header {
 	text-align: center;
 	padding: 25px 0;
 }
-
 time {
 	color: #888;
 	font-style: italic;
@@ -165,7 +86,12 @@ header > p {
 	text-align: center;
 	font-variant: small-caps;
 }
-
+header > span {
+	font-family: 'Gill Sans', sans-serif;
+	text-transform: uppercase;
+	color: #222;
+	border-bottom: 1px solid #222;
+}
 
 aside {
 
@@ -410,6 +336,24 @@ nav a:hover {
 	html {
 		/*background-color: #ccf;*/
 		/*font-size: 120%;*/
+	}
+	#part-one {
+		background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=1920x1080) 50% 0 no-repeat;
+	}
+	#part-two {
+		background: url(../image.php?img=revisited/WP_20131001_014.jpg&size=1920x1080) 50% 0 no-repeat;
+	}
+	#part-three {
+		background: url(../image.php?img=revisited/WP_20131008_014.jpg&size=1920x1080) 50% 0 no-repeat;
+	}
+	#part-four {
+		background: url(../image.php?img=revisited/WP_20131003_011.jpg&size=1920x1080) 50% 0 no-repeat;
+	}
+	#part-five {
+		background: url(../image.php?img=revisited/WP_20131006_030.jpg&size=1920x1080) 50% 0 no-repeat;
+	}
+	#part-six {
+		background: url(../image.php?img=revisited/WP_20131009_058.jpg&size=1920x1080) 50% 0 no-repeat;
 	}
 	article > header {
 		padding: 250px 0 750px;
