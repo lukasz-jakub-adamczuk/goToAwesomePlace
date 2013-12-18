@@ -38,7 +38,12 @@ h2 {
 }
 
 
+
+aside {
+	width: 304px;
+}
 dl {
+	width: 100%;
 	background: #eee;
 	border-radius: 5px;
 	padding-bottom: 10px;	
@@ -46,15 +51,15 @@ dl {
 
 dt {
 	display: inline-block;
+	width: 60%;
 	color: #444;
-	width: 190px;
 	text-align: right;
 }
 dd {
 	display: inline-block;
+	width: 35%;
 	font-size: 2em;
-	width: 120px;
-	margin: 10px 0 0 10px;
+	margin: 10px 0 0 5%;
 }
 dd > span {
 	color: #888;
@@ -93,23 +98,6 @@ header > span {
 	border-bottom: 1px solid #222;
 }
 
-aside {
-
-	width: 304px;
-	_float: right;
-	_margin-left: 20px;
-}
-dl {
-	width: 100%;
-}
-
-dt {
-	width: 60%;
-}
-dd {
-	width: 35%;
-	margin-left: 5%;
-}
 
 .media {
 	float: right;
@@ -122,7 +110,6 @@ dd {
 	font-size: .875em;
 }
 
-
 .small {
 	width: 320px;
 }
@@ -133,16 +120,14 @@ blockquote {
 	font-size: 1.5em;
 }
 
+
 footer {
 	text-align: center;
 	font-size: 2em;
 	margin: 350px 0;
 }
 
-.hide {
-	/*display: none;*/
-}
-
+/* footer nav */
 nav {
 	/*background: #eee;*/
 	border-top: 1px solid #aaa;
@@ -207,10 +192,6 @@ nav a:hover {
 
 
 @media screen and (min-width: 320px) and (max-width: 650px) {
-	html {
-		/*background-color: #fcc;*/
-		/*font-size: 80%;*/
-	}
 	body {
 		width: 100%;
 	}
@@ -246,7 +227,6 @@ nav a:hover {
 	}
 	.block img {
 		display: block;
-		/*margin: 6px -8px;*/
 		margin: 8px 0;
 		width: 100%;
 	}
@@ -288,10 +268,6 @@ nav a:hover {
 	}
 }
 @media screen and (min-width: 651px) and (max-width: 980px) {
-	html {
-		/*background-color: #cfc;*/
-		/*font-size: 100%;*/
-	}
 	#part-one {
 		background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=1280x800) 50% 0 no-repeat;
 	}
@@ -333,10 +309,6 @@ nav a:hover {
 	}
 }
 @media screen and (min-width: 981px) {
-	html {
-		/*background-color: #ccf;*/
-		/*font-size: 120%;*/
-	}
 	#part-one {
 		background: url(../image.php?img=revisited/WP_20131007_054.jpg&size=1920x1080) 50% 0 no-repeat;
 	}
@@ -366,6 +338,44 @@ nav a:hover {
 	}
 }
 
+/* roadmap */
+.roadmap {
+	position: absolute;
+	width: 100%;
+	height: 100%;
 
+	bottom: 0;
 
+}
+.roadmap div {
+	height: 16.6%;
+	position: relative;
+	
+}
+.roadmap a {
+	display: block;
+	/*height: 100%;*/
+	text-align: center;
+	font-size: 3em;
+	color: #444;
+	text-shadow: 0 1px 0 #fff;
+	text-decoration: none;
+}
+.roadmap span {
+	font-family: Georgia, serif;
+	position: absolute;
+	top: 33%;
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	text-transform: none;
+}
+
+@media screen and (orientation:landscape) {
+	.roadmap div {
+		float: left;
+		width: 50%;
+		height: 33%;
+	}
+}
 
